@@ -1,0 +1,46 @@
+.spectate-lobby {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+.spectate-lobby h1 {
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.spectate-view {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.spectate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg);
+  background: var(--bg-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.players-info {
+  color: var(--text-secondary);
+  margin-top: var(--space-xs);
+}
+
+.game-details {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .spectate-header {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+}

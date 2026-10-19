@@ -1,0 +1,83 @@
+.chess-game {
+  display: grid;
+  gap: var(--space-xl);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-lg);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--bg-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.game-status {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.game-controls {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.chessboard-wrapper {
+  display: grid;
+  place-items: center;
+  padding: var(--space-lg);
+  background: var(--bg-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+}
+
+.move-history {
+  background: var(--bg-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.move-history h3 {
+  margin-bottom: var(--space-md);
+  color: var(--text-secondary);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.moves-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.move-item {
+  padding: var(--space-xs) var(--space-md);
+  background: var(--bg-elevated);
+  border-radius: var(--radius-pill);
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .game-controls {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,105 @@
+.friends-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.friends-page h1 {
+  text-align: center;
+}
+
+.friends-search {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.friends-search .input-field {
+  flex: 1;
+}
+
+.search-results,
+.friend-requests,
+.friends-list {
+  background: var(--bg-mid);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+}
+
+.search-results h3,
+.friend-requests h3,
+.friends-list h3 {
+  margin-bottom: var(--space-md);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.user-card,
+.request-card,
+.friend-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+  transition: all 0.2s ease;
+}
+
+.user-card:hover,
+.friend-card:hover {
+  border-color: var(--accent);
+}
+
+.user-info,
+.friend-info {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.username {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.user-rating {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.request-actions {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.friends-grid {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.no-friends {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .user-card,
+  .request-card,
+  .friend-card {
+    flex-direction: column;
+    gap: var(--space-md);
+    text-align: center;
+  }
+
+  .request-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
